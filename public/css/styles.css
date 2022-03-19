@@ -20,6 +20,10 @@ header .logoHeader{
 header .logoHeader img{
     width: 50%;
 }
+header nav ul#top-list {
+    margin-bottom: 15px;
+}
+
 .busqueda input{
     width: 100%;
     height: 100%;
