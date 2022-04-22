@@ -1,84 +1,155 @@
-/* Header */
-nav {
-    display: none;
-}
-
 header {
     background-color: var(--yellow);
-    font-size: var(--paragraph);
-    padding-bottom: 10px;
-}
-
-header .burger-menu {
-    width: 15px;
-    text-align: center;
-    margin: 10px auto 0px;
-}
-
-header .burger-menu i{
-    background-color: var(--light_blue);
-    padding: 1.8rem;
-    margin: 0 auto;
-    font-size: 2rem;
-    border-radius: 5px;
-    color: white;
-}
-
-.container-ls {
+  }
+  .contenedor-logo img {
+    width: 50%;
+    align-self: flex-start;
+  }
+  .contenedor-logo {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    padding: 0 2rem;
-    gap: 1rem;
-}
-
-header .logo {
-    padding: 1rem;
-    padding-top: 25px;
-    width: 45%;
-}
-
-header .logo img{
-    min-height: 2rem;
-    max-height: 8rem;
-}
-
-
-.search-bar {
-    background-color: white;
-    padding: 5px 25px;
-    width: 45%;
-    border-radius: 0.6rem;
-    height: 3.5rem;
-}
-
-.search-bar input{
+    width: 90%;
+    padding: 10px;
+    gap: 3px;
+  }
+  .header-buscador {
+    display: flex;
+  }
+  .header-buscador input {
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0;
+  }
+  .header-buscador button {
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0;
+  }
+  .header-buscador input::placeholder {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 4px;
+  }
+  .lista {
+    display: none;
+    list-style: none;
+  }
+  .lista li a {
     text-decoration: none;
-    border-style: none;
-    width: 100%;
-}
-
-.search-bar input:focus {
-    outline: none;
-}
-
-/* search bar */
-
-header .search-bar {
-    display: inline-block;
-}
-
-/* quota */
-
-header .quota {
+    color: black;
+    font-size: 12px;
+  }
+  
+  .login {
+    margin-top: 10px;
+  }
+  header h4 {
+    margin-top: 20px;
     text-align: center;
-    margin: 10px 0 20px;
-}
-
-/* Nav */
-
-header nav ul#top-list {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .bars {
+    text-align: center;
+  }
+  .bars .fas {
+    margin-top: 15px;
     margin-bottom: 15px;
-}
-
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--celeste);
+    color: white;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 320px){
+  }
+  /* TABLET */
+  @media (min-width: 361px) {
+    /* header */
+    .header-section nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px 20px 20px;
+    }
+    .lista {
+      display: block;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .lista li {
+      margin: 5px;
+    }
+    .lista li a {
+      font-size: 7px;
+    }
+    .bars {
+      display: none;
+    }
+    .header-section {
+      padding-top: 5px;
+    }
+    .header-article {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+    }
+    .header-article h4 {
+      width: 40%;
+      font-size: 6px;
+    }
+    .contenedor-logo {
+      width: 60%;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+    }
+    .header-buscador {
+      display: block;
+      display: flex;
+      align-items: center;
+    }
+    .header-buscador input {
+      border: none;
+      width: 100px;
+      margin: 5px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    .header-buscador button {
+      border: none;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+      padding: 0;
+      margin: 0;
+      height: 15px;
+    }
+    .fa-search {
+      padding: 0;
+      margin: 0;
+      
+    }
+    .header-buscador input::placeholder {
+      color: black;
+      font-weight: 600;
+      font-size: 12px;
+      padding-left: 4px;
+    }
+  }
+  /* DESKTOP */
+  @media (min-width: 769px){
+    .header-article h4 {
+      font-size: 12px;
+    }
+    .lista li a {
+      font-size: 12px;
+    }
+  
+  }

@@ -10,38 +10,42 @@
     <script src="https://kit.fontawesome.com/37c7e740fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container-ls">
-          <div class="logo">
-              <img 
-              src="images/logo-mercado-liebre.svg" 
-              alt="Logo mercado liebreee">
-          </div>
-          <div class="search-bar">
-              <input type="text" placeholder="Buscar productos, marcas">
-          </div>
-        </div>
-        <button>
-            <i class="fas fa-search"></i>
-        </button>
-        <p class="quota"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas</p>
+  <header>
+    <section class="header-section">
+        <article class="header-article">
+            <div class="contenedor-logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo">
+                <div class="header-buscador">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <h4> 
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h4>
+        </article>
+
         <nav>
-            <ul id="top-list">
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
+            <ul class="lista">
+                <li><a href="#"><b>Ofertas</b></a></li>
+                <li><a href="#"><b>Tiendas Oficiales</b></a></li>
+                <li><a href="#"><b>Vender</b></a></li>
+                <li><a href="#"><b>Ayuda</b></a></li>
             </ul>
-            <ul>
-                <li><a href="">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
-                <li><a href="">ingresá <i class="fas fa-sign-in-alt "></i></a></li>
-                <li><a href=""></a>Mis compras <i class="fas fa-shopping-basket "></i></li>
+            <ul class="lista login">
+                <li><a href="register"><b>Creá tu cuenta</b> <i class="fas fa-id-card"></i></a></li>
+                <li><a href="login"><b>Ingresá</b> <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#"><b>Mis Compras</b> <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
+    </section>
+</header>
     <main class="home">
         <div><img src="images/img-home-banner.jpg"
              alt="imagen con ofertas" 

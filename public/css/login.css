@@ -1,0 +1,52 @@
+.main-login {
+
+}
+.main-login section {
+ 
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-login div {
+    margin: 15px;
+
+}
+.form-login div input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 260px;
+}
+.btn-login {
+    background-color: var(--azul);
+    color: white; 
+    border-radius: 5px; 
+    border: none;
+    width: 260px;
+    padding: 5px;
+
+}
+
+
+/* TABLET */
+@media (min-width: 361px) {
+    .btn-login {
+        padding: 5px 140px;     
+    }
+}
+/* DESKTOP */
+@media (min-width: 769px){
+    .form-login div input {
+        padding: 5px;
+        width: 360px;
+    }
+    .btn-login {
+        width: 360px;
+        padding: 5px;
+    
+    }
+}
