@@ -47,19 +47,18 @@
     </header>
     <main class="main-login">
         <section>
-            <form class="form-login" action="/login" method="POST">
-                <div>
-                    <label for="usuario"></label>
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
-                </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">
-                </div>
-                <a href="/">
-                    <button class="btn-login" type="button">Enviar</button>
-                </a>
-            </form>
+            <form>
+                <fieldset class="container-login">
+                  <legend>Información Personal</legend>
+                  <label for="nombre">Nombre:</label>
+                  <input name="nombre" id="nombre" type="text" tabindex="1" />
+                  <label for="apellidos">Apellidos:</label>
+                  <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+                  <label for="nombre">Nombre:</label>
+                  <input name="nombre" id="nombre" type="text" tabindex="3" />
+
+                </fieldset>
+            
         </section>
     </main>
     <footer>
