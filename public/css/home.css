@@ -69,10 +69,22 @@ main.home {
    /*  justify-content: space-between; */
 }
 
+main section.sales article.card div.product-info p.producto-price:hover{
+
+  box-shadow: 0 4px 16px rgb(172, 78, 49);
+  transition: all 0.2s ease;
+
+}
+
 .home .card .card-content .product-info :nth-child(1){
     flex-grow: 1;
     font-size: 1.8rem;
 }   
+.home .card .card-content .product-info :nth-child(1):hover{
+    color:red;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
 
 .home .card .card-content .product-info :nth-child(2){
     color: var(--green);
@@ -106,6 +118,11 @@ main.home {
     }
     .home .card .card-content .product-name {
         display: block;
+    }
+    .home h3.section-title{
+        text-align: center;
+        margin-bottom: 4px;
+        text-transform:capitalize;
     }
 
 }
