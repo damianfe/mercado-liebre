@@ -11,27 +11,48 @@ header {
     padding: 10px;
     gap: 3px;
   }
-  .header-buscador {
+  .group {
     display: flex;
-  }
-  .header-buscador input {
-    border: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 0;
-  }
-  .header-buscador button {
-    border: none;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 0;
-  }
-  .header-buscador input::placeholder {
-    color: black;
-    font-weight: 600;
-    font-size: 12px;
-    padding-left: 4px;
-  }
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+    cursor:pointer;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(9, 11, 22, 0.808);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(131, 103, 13, 0.836);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
   .lista {
     display: none;
     list-style: none;
@@ -73,7 +94,7 @@ header {
     .header-section nav {
       display: flex;
       justify-content: space-between;
-      padding: 10px 10px 20px 20px;
+      padding: 5px 5px 10px 10px;
     }
     .lista {
       display: block;
@@ -83,6 +104,11 @@ header {
     }
     .lista li {
       margin: 5px;
+    }
+    .lista li:hover{
+      background-color: #fff;
+      transition: ease;
+
     }
     .lista li a {
       font-size: 7px;
@@ -118,8 +144,6 @@ header {
     }
     .header-buscador input {
       border: none;
-      width: 100px;
-      margin: 5px;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
     }
